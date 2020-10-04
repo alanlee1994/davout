@@ -1,7 +1,6 @@
 import React from 'react';
-import { isCompositeComponent } from 'react-dom/test-utils';
 import {Container} from 'semantic-ui-react';
-import { Icon, Label, Menu, Table } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 
 const DataStatistics = (props) => {
     const {data} = props;

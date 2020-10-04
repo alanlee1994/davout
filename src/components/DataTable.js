@@ -1,7 +1,6 @@
 import React from 'react';
-import { isCompositeComponent } from 'react-dom/test-utils';
-import {Container} from 'semantic-ui-react';
-import { Icon, Label, Menu, Table } from 'semantic-ui-react';
+import { Container } from 'semantic-ui-react';
+import { Table } from 'semantic-ui-react';
 
 const DataTable = (props) => {
     const {data} = props;
@@ -10,7 +9,7 @@ const DataTable = (props) => {
       rowsArray.push(data[key]);
     }
     return (
-      <Container text>
+      <Container>
         <Table celled>
             <Table.Header>
               <Table.Row>

@@ -1,9 +1,10 @@
 import React , {useEffect, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import DataTable from './components/DataTable';
 import DataStatistics from './components/DataStatistics';
+import Navbar from './components/Navbar';
 import { Grid } from 'semantic-ui-react';
+import 'semantic-ui-css/semantic.min.css';
 
 function App() {
   const [priceData, setPriceData] = useState([{}]);
@@ -32,7 +33,8 @@ function App() {
 
   return (
     <div className="App">
-      <Grid divided='vertically'>
+      <Navbar/>
+      <Grid columns={2}>
         <Grid.Row columns={2}>
           <Grid.Column>
               <DataTable data={priceData} />
